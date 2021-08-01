@@ -1,0 +1,58 @@
+{
+  "npmScope": "stores",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "build-storybook"
+        ]
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "bike-store": {
+      "tags": []
+    },
+    "bike-store-e2e": {
+      "tags": [],
+      "implicitDependencies": ["bike-store"]
+    },
+    "blog": {
+      "tags": []
+    },
+    "blog-e2e": {
+      "tags": [],
+      "implicitDependencies": ["blog"]
+    },
+    "header": {
+      "tags": []
+    },
+    "header-e2e": {
+      "tags": [],
+      "implicitDependencies": ["header"]
+    }
+  }
+}
