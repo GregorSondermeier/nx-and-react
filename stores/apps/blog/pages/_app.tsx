@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to blog!</title>
+        <title data-test="greeting">Welcome to blog!</title>
       </Head>
       <div className="app">
         <header className="flex">
