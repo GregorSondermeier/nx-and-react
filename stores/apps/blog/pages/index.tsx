@@ -94,5 +94,3 @@ nx affected:e2e
     </div>
   );
 }
-
-export default Index;

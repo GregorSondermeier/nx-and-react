@@ -1,11 +1,12 @@
-import styles from './app.module.scss';
-
+import { Header } from '@stores/header';
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
+import styles from './app.module.scss';
 
 export function App() {
   return (
     <div className={styles.app}>
+      <Header />
       <header className="flex">
         <Logo width="75" height="75" />
         <h1 data-test="greeting">Welcome to bike-store!</h1>
@@ -97,5 +98,3 @@ nx affected:e2e
     </div>
   );
 }
-
-export default App;

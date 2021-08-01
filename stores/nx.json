@@ -40,6 +40,9 @@
     "blog-e2e": {
       "tags": [],
       "implicitDependencies": ["blog"]
+    },
+    "header": {
+      "tags": []
     }
   }
 }
