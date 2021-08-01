@@ -28,6 +28,7 @@
   "private": true,
   "dependencies": {
     "@nrwl/next": "12.6.3",
+    "@nrwl/storybook": "^12.6.3",
     "core-js": "^3.6.5",
     "document-register-element": "1.13.1",
     "next": "11.0.1",
