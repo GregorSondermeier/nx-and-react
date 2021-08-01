@@ -33,6 +33,13 @@
     "bike-store-e2e": {
       "tags": [],
       "implicitDependencies": ["bike-store"]
+    },
+    "blog": {
+      "tags": []
+    },
+    "blog-e2e": {
+      "tags": [],
+      "implicitDependencies": ["blog"]
     }
   }
 }
